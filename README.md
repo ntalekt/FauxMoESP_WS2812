@@ -22,3 +22,4 @@ WS2812FX: https://github.com/kitesurfer1404/WS2812FX<br>
 ```
 2. Update the `LED_COUNT` & `LED_PIN` variables.
 3. Compile and run on your NodeMCU
+4. Execute the Discover Devices option from your Alexa app or tell Echo/Dot to do it. 
