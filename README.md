@@ -3,7 +3,8 @@ Control WS2812 RGB & RGBW pixels from Alexa using a NodeMCU ESP8266.
 
 ## Requirements
 ### Hardware
-This code was tested on a HiLetgo NodeMCU ESP8266 board. You need some WS2812B LEDs (e.g. NeoPixel) connected to 5V and GND and a data pin of the ESP8266.
+This code was tested on a HiLetgo NodeMCU ESP8266 board. You need some WS2812B LEDs (e.g. NeoPixel) connected to 5V and GND and a data pin of the ESP8266. I used an [74AHCT125](https://www.adafruit.com/product/1787) level-shifter in my project but I've found that it will do fine without one.<br>
+![alt text](https://raw.githubusercontent.com/ntalekt/FauxMoESP_WS2812/master/FauxMoESP_WS2812.png)
 
 ### Software
 You need to install the following additional libraries to compile the code:<br>
