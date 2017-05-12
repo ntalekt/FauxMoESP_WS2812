@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ntalekt/FauxMoESP_WS2812.svg?branch=master)](https://travis-ci.org/ntalekt/FauxMoESP_WS2812)
 # FauxMoESP_WS2812FX
 Control WS2812 RGB & RGBW pixels from Alexa using a NodeMCU ESP8266.
 
