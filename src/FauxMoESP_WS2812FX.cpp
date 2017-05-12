@@ -17,6 +17,7 @@ fauxmoESP fauxmo;
  */
 #define LED_COUNT 12
 #define LED_PIN 2
+int BRI = 200;
 
 /**
  * Parameter 1 = number of pixels in strip
@@ -70,7 +71,7 @@ void callback(uint8_t device_id, const char * device_name, bool state) {
         if ( (strcmp(device_name, "rainbow lights") == 0) ) {
                 if (state) {
                         neopixel_state = true;
-                        ws2812fx.setBrightness(200);
+                        ws2812fx.setBrightness(BRI);
                         ws2812fx.setSpeed(200);
                         ws2812fx.setMode(9);
                 } else {
@@ -84,7 +85,8 @@ void callback(uint8_t device_id, const char * device_name, bool state) {
         if ( (strcmp(device_name, "breathe lights") == 0) ) {
                 if (state) {
                         neopixel_state = true;
-                        ws2812fx.setBrightness(200);
+                        ws2812fx.setBrightness(BRI);
+                        ws2812fx.setColor(0x33CCCC);
                         ws2812fx.setSpeed(200);
                         ws2812fx.setMode(2);
                 } else {
@@ -97,8 +99,8 @@ void callback(uint8_t device_id, const char * device_name, bool state) {
         if ( (strcmp(device_name, "white lights") == 0) ) {
                 if (state) {
                         neopixel_state = true;
-                        ws2812fx.setColor(ws2812fx.Color(0, 0, 0, 200));
-                        ws2812fx.setBrightness(200);
+                        ws2812fx.setColor(ws2812fx.Color(0, 0, 0, BRI));
+                        ws2812fx.setBrightness(BRI);
                         ws2812fx.setMode(0);
                 } else {
                         neopixel_state = false;
@@ -111,7 +113,7 @@ void callback(uint8_t device_id, const char * device_name, bool state) {
                 if (state) {
                         neopixel_state = true;
                         ws2812fx.setColor(0xFF0400);
-                        ws2812fx.setBrightness(200);
+                        ws2812fx.setBrightness(BRI);
                         ws2812fx.setMode(40);
                 } else {
                         neopixel_state = false;
@@ -125,10 +127,12 @@ void callback(uint8_t device_id, const char * device_name, bool state) {
         if ( (strcmp(device_name, "night mode") == 0) ) {
                 if (state) {
                         neopixel_state = true;
+                        BRI = 75;
                         ws2812fx.setBrightness(75);
                 } else {
                         neopixel_state = false;
-                        ws2812fx.setBrightness(240);
+                        BRI = 200;
+                        ws2812fx.setBrightness(200);
                 }
         }
 }
