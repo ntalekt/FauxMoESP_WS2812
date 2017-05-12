@@ -9,9 +9,6 @@ cache:
 
 install:
     - pip install --user platformio
-    - wget https://github.com/kitesurfer1404/WS2812FX/archive/master.zip -O /tmp/WS2812FX.zip
-    - unzip /tmp/WS2812FX.zip -d /tmp
-    - platformio lib -g install 28 305 306 1101 1303 1647
 
 script:
-    - platformio ci --lib="/tmp/WS2812FX-master" --board=nodemcuv2
+    - platformio run
