@@ -2,7 +2,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <ESP8266WiFi.h>
 #include "fauxmoESP.h"
-#include <WS2812FX.h>
+#include <WS2812FX-master/WS2812FX.h>
 
 /**
  * Set your SSID and WIFI password
