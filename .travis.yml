@@ -12,4 +12,4 @@ install:
     - platformio lib -g install 28 305 306 1101 1303 1647
 
 script:
-    - platformio ci --board=nodemcuv2
+    - platformio ci --board=nodemcuv2 --lib="."
