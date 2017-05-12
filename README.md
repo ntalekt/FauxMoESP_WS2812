@@ -16,7 +16,7 @@ FauxmoESP: https://bitbucket.org/xoseperez/fauxmoesp<br>
 WS2812FX: https://github.com/kitesurfer1404/WS2812FX<br>
 
 ## How to use
-1. Create a `credentials.h` with your WIFI_SSID & WIFI_PASS<br>
+1. Update the `credentials.h` with your WIFI_SSID & WIFI_PASS<br>
 ```cpp
 #define WIFI_SSID "EnterYourSSID"
 #define WIFI_PASS "EnterYourPASS"
