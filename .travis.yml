@@ -8,7 +8,7 @@ cache:
         - "~/.platformio"
 
 install:
-    - pip install -U platformio
+    - pip install --user platformio
     - platformio lib -g install 28 305 306 1101 1303 1647
 
 script:
